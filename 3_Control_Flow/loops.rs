@@ -27,6 +27,20 @@ fn main()
     {
         println!("{}: {}", pos, y);
     }
+    /*
+    The Enumetate fucntion generates the 0 - 10
+    0: 30
+    1: 31
+    2: 32
+    3: 33
+    4: 34
+    5: 35
+    6: 36
+    7: 37
+    8: 38
+    9: 39
+    10: 40
+    */
 
     let country_code = 44;
 
@@ -34,7 +48,7 @@ fn main()
         44 => "UK",
         46 =>"sweden",
         1..=1000=> "unknown",
-        _ => "invalid"
+        _ => "invalid" // the _ symbol merans all other cases 
     };
 
     println!("Country with code: {} is {}", country_code, country);

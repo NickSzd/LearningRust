@@ -1,9 +1,9 @@
 #[allow(dead_code)]
 #[allow(unused_variables)]
-use std::mem;
+//use std::mem;
 
 const MEANING_OF_LIFE:u8 = 42; // global variable with no fixed address
-static z:i32 = 123;
+static Z:i32 = 123;
 
 fn scope_and_shadowing()
 {
@@ -29,7 +29,7 @@ fn operators()
     println!("remainder of {} / {} = {}", a, 3,(a%3));
 
     let a_cubed = i32::pow(a,3);
-    println!("a^3 = {}", a);
+    println!("a^3 = {}", a_cubed);
 
     let b = 2.5;
     let b_cubed = f64::powi(b,3); // integral power
@@ -52,13 +52,16 @@ fn operators()
     //LOGICAL
     let pi_less_4 = std::f64::consts::PI < 4.0; // true
     // > <= >= ==
+    println!( "{}" ,pi_less_4);
 
-    let x = 5;
-    let x_is_5 = x == 5; 
+    //let x = 5;
+    //let x_is_5 = x == 5; 
 }
 
 fn main()
 {
-    //scope_and_shadowing();
-    println!("const = {}, static = {}", MEANING_OF_LIFE, z);
+    operators();
+    println!("------------------------------------------");
+    scope_and_shadowing();
+    println!("const = {}, static = {}", MEANING_OF_LIFE, Z);
 }

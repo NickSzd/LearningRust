@@ -56,7 +56,7 @@ fn main()
             {
                 println!("FAILED");
                 entry.clear();
-                //state = State::Locked; // 
+                state = State::Locked; // thsi statement ensures you do not en up in an endless loop when satte is failed
 
             }
 
